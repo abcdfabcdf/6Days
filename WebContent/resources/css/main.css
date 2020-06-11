@@ -1,0 +1,95 @@
+/*          �ۼ��� : ���ֿ�
+            �ۼ��� : 2020-01-08
+            ���� : ��ȭ��ܿ��� ����� ���� css*/
+            
+            
+
+
+            body{
+                 font-family: 'Jua', sans-serif;
+                background-color: whitesmoke;
+                padding: 0%;
+                width:100%;
+            }
+
+
+            #STATICMENU{
+                border: 1px solid lightgray;
+                border-radius: 2px;
+                height: 300px;
+                padding: 10px;
+                width: 150px;
+                background-color: white;
+                font-size: 20px;
+            }
+
+/*          �ۼ��� : ���ֿ�
+            �ۼ��� : ????
+            ���� :  ����! ���δ� ������ ���� 01-17 �η� ���� ���� css �������״´�
+                    �̹��� ���Ͽ� �ִ� ������ ���� css�� ��� �����ϳ���?
+                    �ٸ� ȭ��ܿ��� ����ϰ� �ִ��� �ñ��ؼ� ����ϴ� 
+                    #sendcoment ����!*/
+            #contentArea{
+                width: 918px;
+                height: 100%;
+                margin-left: 1.8%;
+                align-content: center;
+                padding: 15px;
+                padding-top: 100px;
+                text-align: center;
+                margin : 0px auto;
+
+            }
+
+            #content{
+                border: none;
+                background-color: white;
+                width: 690px;
+                height: auto;
+                padding: 10px;
+                text-align: center;
+                padding-top: 15px;
+                font-size: 20px;
+            }
+
+            #sendcoment{
+                width: 600px;
+                border: 1px solid lightgray;
+                border-radius: 3px;
+                font-size: 20px;
+            }
+
+/*          �ۼ��� : ���ֿ�
+            �ۼ��� : 2020-01-17
+            ���� : ���⼭���� ��ũ�ѹ� ���� css */
+
+            ::-webkit-scrollbar{    /*��ũ�ѹ� ����*/
+                width: 15px;
+            }
+
+            ::-webkit-scrollbar-track{  /*��ũ�ѹ� ��� ����*/
+                border-radius: 10px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb{ /*��ũ�ѹ� �׹��� ����� ����*/
+                background-color: lightgrey;
+                border-radius: 8px;
+            }
+
+            ::-webkit-scrollbar-thumb:hover{    /*��ũ�ѹ� ����� ���� Ŀ�� �÷����� ����*/
+                background: -webkit-linear-gradient(145deg, rgb(37, 95, 229), rgb(177, 250, 208));
+                background: linear-gradient(145deg, rgb(37, 95, 229), rgb(177, 250, 208));
+            }            
+
+/*          �ۼ��� : ���ֿ�
+            �ۼ��� : 2020-01-21
+            ���� : ���� ���̵��� ������ */   
+            .advertising{
+				height: 500px;
+			    display: inline-block;
+			    margin-left: 38%;
+			    margin-top: 3%;
+			    position: fixed;
+            }    
+    

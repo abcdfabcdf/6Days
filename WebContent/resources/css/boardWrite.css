@@ -1,0 +1,156 @@
+#boardWrite {
+    font-size: 25px;
+    width: 740px;
+    margin-left: 3.8%;
+    align-content: center;
+    text-align: center;
+    background: white;
+    line-height: 36px;
+    height:100%;
+
+}
+
+#boardcontent{
+    padding-top:5px;
+    background-color: #f9f9f9;
+    margin-bottom:50px;
+
+
+}
+#board-title{
+    margin-left: 13.8%;
+    font-size:50px;
+
+
+}
+#board-subject{
+    float:left;
+    width:646px;
+    height:20px;
+    margin-left: 13px;
+
+}
+#board-area{
+    border:1px solid #CCC;
+    border-radius:  50px;
+    width:800px;
+    margin-left:39px;
+    padding: 20px;
+
+}
+.board-type{
+    width: 68px;
+    font-size:16px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+   
+  
+}
+.board-value{
+    font-size:16px;
+
+}
+
+.board-button{
+  color: #333;
+  background-color: #fff;
+  border-color: #adadad !important;
+  font-size:16px;
+  border:2px solid;
+  border-radius: 5px;
+  padding:5px;
+  float:right;
+  margin-right:15px;
+  cursor: pointer;
+  width:65px;
+}
+
+.board-button:hover{
+      color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+tr>td{
+    border-bottom: 1px solid whitesmoke;
+    /*background:blue;*/
+}
+
+
+#coment00{
+	margin-left:3.8%;
+	text-align: left;
+	
+	
+}
+
+#profileimg000{
+	width: 55px;
+	height: 53px;
+    border-radius: 100%;
+    float: left;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 3px 6px 0px #222;
+    margin-left: 10px;
+	
+}
+
+
+#profileimg00{
+	    width: 50px;
+    height: 48px;
+    border-radius: 100%;
+    float: left;
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+}
+
+#pofileimgbox0001{
+	width: 50px;
+    position: absolute;
+	
+}
+
+#userIdText{
+    width: 59px;
+    text-align: center;
+    position: absolute;
+    margin-top: 63px;
+    margin-left: 9px;
+/*     background: yellow; */
+}
+
+#innerComments{
+    width: 565px;
+    height: 70px;
+    resize: none;
+    margin-left: 78px;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 3px; 
+    border: none;
+    background: #efefef;
+}
+
+#comentsInsertDate{
+    width: 150px;
+    text-align: left;
+    border: none;
+    position: absolute;
+    margin-left: 660px;
+	 
+}
+
+#btns000{
+    position: absolute;
+    margin-left: 655px;
+    margin-top: -40px;
+
+}
+
+
+
+
+

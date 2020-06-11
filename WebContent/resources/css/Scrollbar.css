@@ -1,0 +1,22 @@
+/*          작성자 : 박주완
+            작성일 : 2020-01-17
+            내용 : 여기서부터 스크롤바 관련 css */
+
+            ::-webkit-scrollbar{    /*스크롤바 넓이*/
+                width: 15px;
+            }
+
+            ::-webkit-scrollbar-track{  /*스크롤바 배경 색상*/
+                border-radius: 10px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb{ /*스크롤바 그뭐냐 막대기 색상*/
+                background-color: lightgrey;
+                border-radius: 8px;
+            }
+
+            ::-webkit-scrollbar-thumb:hover{    /*스크롤바 막대기 위에 커서 올렸을때 색상*/
+                background: -webkit-linear-gradient(145deg, rgb(37, 95, 229), rgb(177, 250, 208));
+                background: linear-gradient(145deg, rgb(37, 95, 229), rgb(177, 250, 208));
+            }

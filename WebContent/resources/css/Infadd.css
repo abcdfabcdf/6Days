@@ -1,0 +1,251 @@
+/* <!-- �ۼ��� : ���ֿ�, �Ű漷, �̼���
+        �ۼ��� : 2020-01-17
+        ���� : ����ȭ�� ���� ���ε� css--> */
+
+#Infmodal {
+    display: none;
+    position: fixed;
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+#Infcontent {
+width: 1000px;
+    height: 550px;
+    border: none;
+/*     border-radius: 10px; */
+    margin-top: 5%;
+    background-color: white;
+    z-index: -5;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#Infmenu{   /*���� �޴��� */
+    z-index: 0;
+    margin-top: -15px;
+    margin-left: -15px;
+    width: 660px;
+    height: 35px;
+/*     border-radius: 10px; */
+    background-color: white;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#Infclosebtn{   /*close ��ư*/
+    position: absolute;
+    z-index: 5;
+    font-size: 20px;
+    opacity: 70%;
+    color: white;
+    /* border-radius: 5px; */
+    border: none;
+    background-color: black;
+    text-align: right;
+    display: inline-block;
+    margin-left: 587px;
+    }   
+#Infleft {      /*���� ����� ��ü*/
+    width: 650px;
+    height: 500px;
+    display: inline-block;
+    /* border: 1px solid; */
+    /* background: whitesmoke; */
+    float: left;
+}
+
+/* #Infadd {      
+    font-size: 25px;
+    text-align: center;
+}*/
+
+#Infright {     /*������ ����� ��ü*/
+    position: absolute;
+    width: 345px;
+    height: 480px;
+    /* background: lightgreen; */
+    display: inline-block;
+    /* float: right; */
+    color: gray;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: -170px;
+}
+
+
+#Infcomment {       /*comment â*/
+    margin: 1% 5%;
+    width: 90%;
+    height: 45%;
+    border: 1px soild;
+    resize: none;
+    font-size: 16px;
+    padding: 5px;
+    vertical-align: top;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+#Infhashtag{        /*�ؽ��±�â*/
+    margin: 1% 5%;
+    width: 90%;
+    height: 37%;
+    border: 1px soild;
+    resize: none;
+    font-size: 16px;
+    padding: 5px;
+    vertical-align: top;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.ImgArea0{
+	width: 210px;
+	height: 220px;
+	box-shadow: 0 5px 10px -6px #222;
+
+}
+
+.titleImg0{
+	width: 210px;
+	height: 220px;
+	border: none;
+	background-image: url("/6Days/resources/icon/plusimg.png");
+}
+
+#userinfo{
+    display: inline-block;
+    text-align: left;
+    background: white; 
+    width: 343px;
+    height: 45px;
+    margin-top: -35px;
+    padding: 8px;
+/*     border-radius: 8px; */
+    margin-left: -171px;
+    /* padding-right: 50px; */
+    /* margin-left: -4px; */
+    position: absolute;
+
+}
+
+#userimgbox{
+	width: 55px;
+	height: 53px;
+    border-radius: 100%;
+    float: left;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 3px 6px 0px #222;
+    margin-left: 10px;
+	
+}
+
+#userimg{
+    width: 50px;
+    height: 48px;
+    border-radius: 100%;
+    float: left;
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+#username{
+	display:inline-block;
+	font: 30px;
+	
+}
+
+#userName0{
+	display: inline-block;
+    width: 250px;
+    /* background: yellow; */
+    border: none;
+    height: 35px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 9px;
+    font-size: 22px;
+}
+/* #filebox{
+    
+    margin-left: 20%;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #004f82;
+    color: white;
+    text-align: center;
+}
+
+#filebox label{
+    display: inline-block;
+    line-height: normal;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px; 
+    font-size: 25px;
+}
+
+#filebox input[type="file"]{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+} */
+#uploadFile{
+    width: 14%;
+    height: 80%;
+    font-size: 25px;
+    position: absolute;
+    bottom: -350px;
+    left: 25%;
+}
+    /* font-family: 'Jua', sans-serif;
+    border-radius: 10px;
+    background-color: #2f7a95;
+    border: none;
+    color: white;
+    cursor: pointer; */
+
+#Infupload{
+    font-family: 'Jua', sans-serif;
+    border-radius: 4px;
+    background-color: rgb(15, 76, 129);
+    border: none;
+    color: white;
+    cursor: pointer;
+    bottom: 0;
+    margin-left: 15px;
+    font-size: 25px;
+    width: 333px;
+    height: 40px;
+    box-shadow: 0 5px 10px -6px #222;
+}
+
+
+
+
+
+
+
+
+

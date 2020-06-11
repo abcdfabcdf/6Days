@@ -1,0 +1,91 @@
+#pwdupdatepage{
+    width: 700px;
+    height: 800px;
+    margin-left: 270px;
+    padding: 15px;
+    padding-top: 100px;
+    border: none;
+}
+
+#pwdupdatecontent{
+    border: none;
+    background-color: white;
+    width: 690px;
+    height: 420px;
+    padding: 10px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+#bottom{
+    margin-bottom: 10%;
+}
+
+#pwdupdatetext{
+    margin-top: 40px;
+    margin-left: 15%; 
+    margin-right: 15%;
+}
+#nowpassword{
+    margin-left: 15%; 
+    margin-right: 15%; 
+    margin-top: 4%;
+}
+#newpassword{
+    margin-left: 15%; 
+    margin-right: 15%;
+}
+
+#pwdupbtn{
+    margin-left: 15%; 
+    margin-right: 15%;
+}
+
+#pwdupdatebtn{
+    width: 100%; 
+    height: 50px;
+    cursor: pointer;
+}
+.redata{
+    font-size:12px;
+    width: 70%;
+    height: 35px;
+    border-top: 0;
+    border-right:0; 
+    border-left:0; 
+    border-bottom: 1; 
+    border-color: lightgray;
+}
+
+.redata::placeholder {color: lightgray;}
+
+.redata:focus{outline: none;}
+
+button:focus{outline: none;}
+
+label{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#lbl1{
+    padding-right: 30px;
+}
+#lbl2{
+    padding-right: 45px;
+}
+#lbl3{
+    padding-right: 15px;
+}
+
+#pwdresult{
+    font-size:xx-small; 
+    color: red; 
+    padding-left: 120px;
+}
+#pwdupdatepage .redata[type=password]:focus {
+    border-color: black;
+    border-top: 0;
+    border-right:0; 
+    border-left:0; 
+    border-bottom: 1; 
+}  

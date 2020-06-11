@@ -1,0 +1,39 @@
+.chat{
+    position: absolute;
+}
+
+#chatting{
+    width: 250px;
+    height: 500px;
+    border-radius: 8px;
+    background-color: lightgray;
+    margin-top: 1%;
+    right: 10%;
+}
+
+#chatarea{
+    width: 220px;
+    height: 435px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    overflow-y: auto;
+    align-self: center;
+    text-align: left;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+#textarea{
+    width: 220px;
+    height: 25px;
+    border: 1px solid black;
+    background: white;
+    color: black;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-top: 185%;
+    vertical-align: middle;
+    margin-left: 5%;
+}

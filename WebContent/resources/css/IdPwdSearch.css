@@ -1,0 +1,607 @@
+/*-- 작성자 : 국영미, 박주완
+   * 작성일 : 2020.01.14
+   * 내용 : 아이디찾기 / 비밀번호찾기 css
+   * 연결된 페이지 : (IdSearch/IdSearchOk/IdEmailSend // PwdSearch/PwdSearchOk/PwdEmailSend)
+   * 수정일 : 
+*/
+html {
+    height: 100%;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-touch-callout: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+}
+
+body {
+    display: block;
+    display: block;
+    background: white;
+}
+
+html,body,div,span,p,blockquote,del,dfn,img,q,sub,sup,var,b,i,ol,ul,li,
+fieldset,form,label,table,tbody,tfoot,thead,tr,th,td,article,aside,footer,
+hgroup,menu,nav,section,summary,time,audio,video {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+element.style {
+    display: block;
+}
+
+input,select {
+  vertical-align: middle;
+}
+
+input {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #202020;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+ select { 
+  -webkit-appearance: none; /* 네이티브 외형 감추기*/
+  -moz-appearance: none; appearance: none; 
+} 
+
+/* IE 10, 11의 네이티브 화살표 숨기기 */ 
+select::-ms-expand { display: none; }
+
+
+
+button {
+  -webkit-appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: buttontext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: buttonface;
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  border-image: initial;
+}
+
+#idContents {
+    border: 1px solid #ececec;
+    margin-left: 0px;
+    margin-top: 0px;
+    background: white;
+    height : 580px;
+    padding: 0px;
+    font-family: "Noto Sans KR", NanumGothic, "Malgun Gothic", "Apple SD Gothic Neo", dotum, sans-serif;
+    border-radius: 10px;
+}
+
+#searchWrap {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* selectbox */
+.contentsWrap .customSelect select {
+    visibility: hidden;
+}
+
+.fontBold {
+    font-weight: boid;
+    color: #008eb9;
+}
+
+.contentsWrap {
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+  
+.contentsWrap * {
+    font-family: "Noto Sans KR", NanumGothic, "Malgun Gothic", "Apple SD Gothic Neo", dotum, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0;
+    font-size: 14px;
+}
+
+.contentsWrap .searchTab li {
+    display: inline-block;
+    width: 50%;
+    height: 45px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #099cc9;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 0;
+    border-radius: 20px 20px 0px 0px;
+}
+  
+.contentsWrap .searchTab li:first-child {
+    border-left: 1px solid #ddd;
+}
+  
+.contentsWrap .searchTab li.current {
+    background-color: #fff;
+    border: 1px solid #099cc9;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 0px;
+}
+  
+.contentsWrap .searchTab li.current a {
+    color: #008eb9;
+}
+  
+.contentsWrap .searchTab li a {
+    display: block;
+    line-height: 45px;
+    text-align: center;
+    font-size: 15px;
+    color: #707070;
+}
+
+.idsearchWrap .notiArea {
+    padding: 15px 0;
+    border-bottom: 6px solid #f4f4f4;
+}
+
+.contentsWrap .idsearchWrap .notiArea {
+    padding: 15px 0;
+    border-bottom: 6px solid #f4f4f4;
+}
+
+.contentsWrap .idsearchWrap .notiArea span {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.searchType .typeList {
+    border-bottom: 1px solid #ddd;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList.current .title {
+  background-image: url(../icon/btn_icon_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right -36px;
+  width: 100%;
+  padding: 15px 0;
+  text-align: left;
+  font-size: 15px;
+  color: #202020;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList .title {
+    background-image: url(../icon/btn_icon_arrow.png);
+    background-repeat: no-repeat;
+    background-position: right top 22px;
+    width: 100%;
+    padding: 15px 0;
+    text-align: left;
+    font-size: 15px;
+    color: #202020;
+}
+
+.searchType .typeList .inputEnter .inputBox {
+    margin-bottom: 10px;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList {
+
+    border-bottom: 1px solid #ddd;
+}
+
+.searchType .typeList .inputEnter .styleInput {
+    margin-bottom: 10px;
+}
+
+.searchType .typeList .inputEnter {
+    padding: 5px 0 15px;
+}
+
+.contentsWrap button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.contentsWrap .idsearchWrap .allResult ul li .myinfo button {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    padding: 0 0 2px;
+    line-height: 1;
+    border: 1px solid #099cc9;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    color: #0886b8;
+}
+
+.contentsWrap .btnRed {
+    display: block;
+    background-color: #099cc9;
+    width: 100%;
+    height: 45px;
+    line-height: 42px;
+    border-radius: 2px;
+    border: 1px solid #099cc9;
+    text-align: 
+    center;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+}
+.contentsWrap .idsearchWrap .searchType .typeList .inputEnter {
+
+    padding: 5px 0 15px;
+}
+  
+.contentsWrap .idsearchWrap .searchType .typeList .inputEnter .inputBox {
+    font-size: 0;
+  }
+  
+.contentsWrap .idsearchWrap .searchType .typeList .inputEnter .inputBox.hidden {
+    display: none;
+}
+   
+.delBtn {
+    position: absolute;
+    top: 9px;
+    right: 11px;
+    z-index: 2;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    background: url(../icon/btn_input_del.png) no-repeat center center #fff;
+    outline: 0;
+    cursor: pointer;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList .inputEnter .inputBox .styleInut {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.contentsWrap .styleInput .delBtn {
+    position: absolute;
+    top: 9px;
+    right: 11px;
+    z-index: 2;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    background: url(../icon/btn_input_del.png) no-repeat center center #fff;
+    outline: 0;
+    cursor: pointer;
+}
+
+/*******************************************************************/
+.contentsWrap .styleInput {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList .inputEnter .emailInput .customSelect {
+  display: inline-block;
+  width: 30%;
+  height: 40px;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList .inputEnter .emailInput .styleInput {
+  width: 70%;
+  margin-bottom: 0;
+  padding-right: 8px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.contentsWrap .customSelect {
+  position: relative;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList .inputEnter .emailInput {
+    margin-bottom: 10px;
+    font-size: 0;
+}
+
+.contentsWrap .customSelect .newSelect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    line-height: 38px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: #f9f9f9 url(http://imivory.me/img/noname/arrow.png) no-repeat right center;
+    padding: 0 25px 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #202020;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.newSelect:focus {
+    outline-style : none;
+}
+
+.contentsWrap .customSelect .options {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+    border: 1px solid #313131;
+    background-color: #fff;
+}
+
+.contentsWrap .customSelect.active .options {
+  display: block;
+}
+
+.contentsWrap .customSelect .options li {
+    padding: 3px 10px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.contentsWrap .customSelect .options li:hover {
+    background: #ededed;
+}
+
+.contentsWrap .idsearchWrap .resultBox ul li .date {
+    float: right;
+    display: inline-block;
+    font-size: 14px;
+    color: #707070;
+}
+
+.contentsWrap .radioStyle input[type="radio"]:checked + label {
+    background: url(../icon//btn_radio_on.png) no-repeat 0 0;
+}
+
+.contentsWrap .idsearchWrap .allResult ul li span {
+    display: block;
+    font-size: 15px;
+    color: #202020;
+}
+
+.contentsWrap .idsearchWrap .allResult ul li {
+    padding: 20px;
+}
+
+.contentsWrap .idsearchWrap .allResult {
+    display: none;
+    padding-top: 30px;
+}
+
+.contentsWrap .idsearchWrap .allResult h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #202020;
+}
+
+.contentsWrap .idsearchWrap .allResult ul li .myinfo {
+    position: relative;
+    margin-top: 15px;
+    line-height: 35px;
+    font-size: 13px;
+    color: #707070;
+}
+
+.contentsWrap .idsearchWrap .allResult ul {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.contentsWrap .idsearchWrap .allResult .blNotiText {
+    display: block;
+    margin-top: 12px;
+    font-size: 12px;
+    color: #707070;
+}
+
+.contentsWrap .radioStyle label {
+    display: inline-block;
+    height: 22px;
+    vertical-align: middle;
+    padding-left: 28px;
+    background: url(../icon//btn_radio_off.png) no-repeat 0 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 15px;
+}
+
+.contentsWrap .idsearchWrap .resultBox ul {
+    padding: 25px 0;
+}
+
+.contentsWrap .idsearchWrap .resultBox ul li .radioStyle label {
+    font-weight: 500;
+    font-size: 15px;
+    color: #202020;
+}
+
+.contentsWrap .idsearchWrap .resultBox ul li .verifyIcon {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+    text-indent: -500em;
+}
+
+.contentsWrap .radioStyle {
+    position: relative;
+    display: inline-block;
+    line-height: 22px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.contentsWrap .radioStyle input[type="radio"] {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+    margin-top: 2px;
+    margin-left: 2px;
+    border : 3px;
+    vertical-align: middle;
+}
+
+.contentsWrap .idsearchWrap .resultBox .notiText {
+    display: block;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: #aaa;
+}
+
+.contentsWrap .idsearchWrap .resultBox h4 {
+    display: block;
+    padding-top: 15px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #202020;
+}
+
+.contentsWrap .idsearchWrap .blank15 {
+    padding-bottom: 20px;
+}
+
+ul .options {
+    height: 160px;
+}
+/*************************************************************/
+
+.iInput {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 15px;
+    color: #202020;
+    border-radius: 10px;
+}
+
+.iInput:focus {
+    outline-style : none;
+}
+
+.iInput:hover {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #909090;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 15px;
+    color: #202020;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.eInput {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 15px;
+    color: #202020;
+    border-radius: 10px;
+}
+
+.eInput:focus {
+    outline-style : none;
+}
+
+.eInput:hover {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #909090;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 15px;
+    color: #202020;
+    border-radius: 10px;
+}
+
+.contentsWrap .searchTab ul {
+    font-size: 0;
+}
+
+.contentsWrap .styleInput .error {
+  padding: 10px;
+  line-height: 14px;
+  font-size: 13px;
+  color: #ef3e42;
+}
+
+
+
+.contentsWrap .typeList .error {
+  padding-left: 10px;
+  padding-top: 5px;
+  line-height: 14px;
+  font-size: 13px;
+  color: #ef3e24;
+}

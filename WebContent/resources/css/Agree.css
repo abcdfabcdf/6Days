@@ -1,0 +1,173 @@
+#top{
+    width: 700px;
+    height: 120px;
+    text-align: center;
+    margin: auto;
+}
+#agreepage{
+    width: 700px;
+    height: 950px;    
+    margin: auto  ;
+    border: 1px solid lightgray; 
+    border-radius: 27.5px;
+}
+#bottom{
+    margin-bottom: 10%;
+}
+
+#allagree{
+    position: relative;
+    margin-left: 15%; 
+    margin-right: 15%; 
+    margin-top: 10%;
+}
+
+#useagree{
+    position: relative;
+    margin-left: 15%; 
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+#allcontent{
+    position: relative;
+    margin-left: 15%; 
+    margin-right: 15%; 
+    margin-top: 2%;
+}
+
+#btnagree{
+    margin-left: 15%; 
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+#usearea{
+    width: 500px;
+    height: 100px;
+    background-color: rgb(245, 241, 241);
+    overflow:scroll;
+    overflow-x: hidden;
+} 
+#agreebtn{
+    width: 500px; 
+    height: 50px; 
+    background: rgb(15, 76, 129); 
+    color:white; border: 0px; 
+    cursor: pointer;
+}
+#areebtn:hover{
+     color:#fff;
+    border:1px solid #f40;
+    background-color:#f40;
+}
+
+label{
+    font-size: 16px;
+}
+
+p{
+    font-size: 11px;
+}
+
+#allagree label.in {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+}
+
+#allagree label.out{
+    margin: 3%;
+    cursor: pointer;
+}
+
+#allagree label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 7px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 12px;
+   
+}
+
+
+#allagree input[type="checkbox"] {
+visibility: hidden;
+}
+
+#allagree input[type="checkbox"]:checked + label {
+background-color:rgb(15, 76, 129);
+border-color: rgb(15, 76, 129);
+}
+
+#allagree input[type="checkbox"]:checked + label:after {
+opacity: 1;
+}
+
+#useagree label.in {
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 50%;
+cursor: pointer;
+height: 25px;
+left: 0;
+position: absolute;
+top: 0;
+width: 25px;
+}
+
+#useagree label.out{
+    margin: 3%;
+    cursor: pointer;
+}
+
+#useagree label:after {
+border: 2px solid #fff;
+border-top: none;
+border-right: none;
+content: "";
+height: 4px;
+left: 6px;
+opacity: 0;
+position: absolute;
+top: 8px;
+transform: rotate(-45deg);
+width: 12px;
+}
+
+#useagree input[type="checkbox"] {
+visibility: hidden;
+}
+
+#useagree input[type="checkbox"]:checked + label {
+background-color: rgb(15, 76, 129);
+border-color: rgb(15, 76, 129);
+}
+
+#useagree input[type="checkbox"]:checked + label:after {
+opacity: 1;
+}
+
+#all_content{
+    cursor: text; 
+    font-family: sans-serif; 
+    font-size: 12px; 
+    color: rgb(112, 111, 111);
+}
+
+#small_text{
+    font-size: 12px;
+    color: gray;
+}

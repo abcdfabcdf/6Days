@@ -1,0 +1,80 @@
+		header{
+            line-height: 40px;
+            text-align: center;
+            align-content: center;
+            height: 50px;
+        }
+        
+        #top1{
+			margin: -10px;
+        	width: 110%;
+            z-index: 99;
+            background-color: white;
+            border: 1px solid lightgray;
+            box-shadow: 0 4px 6px -6px #222;
+            padding-top: 2px;
+            height: 64px;
+            position: fixed;
+        }
+
+        .top-btn{
+            width: 40px;
+            margin: 10px;
+        }
+
+        .center{
+            display:inline-block;
+        }
+        
+        #logo{  /*배너로고*/
+            width: 150px;
+            margin: 10px;
+            margin-right: 360px;
+            display: inline-block;
+            margin-left: -125px;
+            cursor:pointer;
+
+        }
+
+
+        #headersearch{
+            display: inline-block;
+            margin-top: 19px;
+            margin-left: -200px;
+            position: absolute;
+        }
+
+        #searchInput{
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+        }
+
+        #searchBtn{
+            
+        }
+
+        #loca{
+            display: inline-block;
+            margin-right: 5px;
+            cursor:pointer;
+
+        }
+
+        #mg{
+            display: inline-block;
+            margin-right: 5px;
+            cursor:pointer;
+
+        }
+
+        #myp{
+            display: inline-block;
+            margin-right: 5px;
+            cursor:pointer;
+
+        }
+        
+        #Infcontent{
+        	margin-top: 4%;
+        }

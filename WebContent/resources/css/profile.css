@@ -1,0 +1,695 @@
+/* <!--     占쎌삂占쎄쉐占쎌쁽 : 獄쏅벡竊쒙옙�끏
+          占쎌삂占쎄쉐占쎌뵬 : 2020-01-09
+          占쎄땀占쎌뒠 : 占쎌�占쏙옙 占쎈늄嚥≪뮉釉� 占쎌넅筌롳옙 
+          占쎈땾占쎌젟占쎌뵬 : 2020-02-18
+          占쎈땾占쎌젟占쎄땀占쎌뒠 : css占쎈땾占쎌젟 
+          -->        */      
+            
+            body{
+                font-family: 'Jua', sans-serif;
+            }
+
+            #container{
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                position: absolute;
+                left: 0px;
+            }
+
+            #profile{
+                width: 850px;
+                height: 280px;
+                padding: 10px;
+                padding-top: 25px;
+                border: none;
+                display: inline-block;
+                margin-bottom: 0px;
+            }
+
+            .post{
+                width: 260px;
+                margin: 7px;
+            }
+
+
+            #show-profile{
+                width: 850px;
+                height: 280px;
+                border-radius: 9px;
+                position: absolute;
+                background: none;
+            }
+            
+            #profilebackgound{
+                width: 850px;
+                height: 280px;
+                background-color: lightgrey;
+                border-radius: 9px;
+                display: inline-block;
+                position:absolute;
+            margin-left: -425px; 
+            z-index: -1;
+                
+                -webkit-box-shadow: 0 5px 10px -6px #222;
+                -moz-box-shadow: 0 5px 10px -6px #222;
+                box-shadow: 0 5px 10px -6px #222;
+            }
+            
+
+            #profileimgbox{
+                width: 170px;
+                height: 165px;
+                border-radius: 100%;
+                float: left;
+                margin-top: 110px;
+                margin-left: 60px;  
+                text-align: center;
+                background-color: white;
+                box-shadow: 1px 3px 6px 0px #222;
+
+            }
+            
+           
+            #profileimg{
+                border-radius: 100%;
+                width: 160px;
+                height: 155px;
+                float: left;
+                padding: 5px;
+                text-align: center;
+                display: inline-block;
+            }
+            
+
+            .profile{
+                font-size: 25px;
+                margin: 10px;
+                margin-top: 1px;
+
+            }
+
+         #hr1{
+          width: 850px;
+          text-align: center;
+          }
+
+            #settingimg{
+                width: 50px;
+                height: 50px;
+            }
+
+            #profilename{
+                width: 300px;
+                height: 140px;
+                margin-top: 130px;
+                border: none;
+                border-radius: 6px;
+                padding: 5px;
+                float: left;
+                margin-left: 10px;
+                text-align: left;
+                padding-left: 10px;
+                color: white;
+            }
+
+            #name{
+                font-size: 50px;
+            }
+
+            #memo{
+                font-size: 25px;
+            }
+
+            #profileright{
+                width: 130px;
+                height: 280px;
+                float: right;
+                border-radius: 15px;
+                text-align: left;
+                font-size: 18px;
+                color: white;
+                padding: 10px;
+               
+            }
+
+            #profileSetbtn{
+                font-family: 'Jua', sans-serif;
+                margin-top: 10px;
+                font-size: 15px;
+                border: none;
+                border-radius: 10px;
+                width: 100px;
+                height: 28px;
+                opacity: 70%;
+                cursor:pointer;
+            }
+
+            #settingbtn{
+                font-family: 'Jua', sans-serif;
+                font-size: 15px;
+                width: 70px;
+                height: 27px;
+                border: none;
+                border-radius: 10px;
+                margin-left: 25px;
+                opacity: 70%;
+                 cursor:pointer;
+            }
+
+            #userprofilshow{
+            background-color: white;
+             border: 1px solid #efefef;
+            width: 110%;
+            height: 45px;
+            margin-left: -1px;
+            margin-top: 0px;
+            text-align: left;
+            padding: 3px;
+            padding-top: 16px;
+            box-shadow: 0 4px 5px -6px #222;
+            }
+
+
+
+
+             /* �뜝�럥�뿰�뼨轅명�ｈ땻�슞寃ュ뜝�룞�삕�땻占� 嶺뚮ㅄ維�占쎈펿嶺뚢댙�삕 */
+
+          #modal{
+                display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+                text-align: center;
+            }
+
+            #modalcontent{
+             width: 1000px;
+             height: 620px;
+             font-size: 25px;
+             margin-top: -53px;
+             display: inline-block;
+             text-align: center;
+             position: fixed;
+            }
+         .contentimgs{
+             height: 620px;
+             width: auto;
+             max-width: 620px;
+             max-height: 620px;
+             min-height: 620px;
+          }
+         
+
+         #dotbox{
+             position: absolute;
+             /* background-color: rgba(0,0,0,0.4); */
+             bottom: 0px;
+             left: 248px;
+         
+         }
+
+            #modalimg{
+            height: 620px;
+             width: auto;
+             float: left;
+             text-align: center;
+            }
+
+            #coments{
+            background-color: white;
+             width: 350px;
+             height: 620px;
+             float: left;
+             padding: 0;
+             overflow: hidden;
+             text-align: center;
+            }
+            .coments{
+                float: left;
+            }
+            
+      /* 寃뚯떆臾� �궡�슜湲� �뱾�뼱媛� �옄由� */
+            #innercoment{
+             height: 420px;
+             max-height: 420px;
+             font-size: 15px;
+             text-align: left;
+             display: inline-block;
+             width: 342px;
+             max-width:342px;
+             margin-top: 15px;
+             padding: 10px;
+             overflow: scroll;
+             overflow-x: hidden;
+            }
+            
+            #ment{
+            padding: 5px;
+            }
+
+            
+            #toolsbox{
+            display: inline-block;
+            width: 350px;
+            /* background: yellow; */
+            margin-left: -5px;
+            padding: 5px;
+            padding-left: 10px;
+            -moz-box-shadow: 0 5px 10px -6px #222;
+            box-shadow: 0 4px 5px -6px #222;
+            border: 1px solid #efefef;
+            }
+            
+            #whitesmile{
+                width: 50px; 
+                height: 50px; 
+                float: left; 
+                margin: 0; 
+                margin-top: -2%; 
+                margin-left: -1%;
+            }
+            
+            #likerUsersName{
+             font-size: 15px;
+             color: gray;
+             float: left;
+             margin-left: 50px;
+             margin-top: 7px;
+             position: absolute;
+            }
+            
+            #likeCount{
+               font-size: 14px; 
+               color: black; 
+               float: left; 
+            margin-left: 92px;
+             margin-top: 7px;
+             position: absolute;
+            }
+            
+            #likeMent{
+               font-size: 12px; 
+               color: gray; 
+               float: left; 
+             margin-left: 118px;
+             margin-top: 7px;
+             position: absolute;
+            }
+            
+            #comentsCount{
+               font-size: 12px; 
+               color: gray; 
+               float: right; 
+               margin: 0; 
+               margin-right: 15px;
+            }
+            
+            #postmakeDate{
+            font-size: 12px;
+             color: gray;
+             float: right;
+             /* margin-right: 32px; */
+             position: absolute;
+               margin-left: 51px;
+             margin-top: 25px;
+            }
+            
+            
+            
+      /* 紐⑤떖 �떕湲� 踰꾪듉*/
+            #closebtn{
+            position: absolute;
+             width: 25px;
+             height: 24px;
+             z-index: 10;
+             font-size: 19px;
+             margin-left: 486px;
+             margin-top: 0px;
+             opacity: 100%;
+             color: white;
+             border-radius: 5px;
+             border: none;
+             background-color: black;
+            }
+
+            #comentarea{
+             /* background: yellow; */
+             border: 1px solid #efefef;
+             height: 32px;
+             padding: 8px;
+             margin-left: -5px;
+             padding-left: 10px;
+             display: inline-block;
+             width: 350px;
+             bottom: 10px;
+             margin-top: -9px;
+            }
+
+            #comentinput{
+            width: 280px;
+             height: 29px;
+             float: left;
+             border: none;
+             background: none;
+             font-size: 13px;
+            }
+
+            #comentsend{
+             font-family: 'Jua', sans-serif;
+             height: 25px;
+             font-size: 20px;
+             background: none;
+             border: none;
+             color: rgb(15, 76, 129);
+            }
+
+            #setting{
+                display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+                text-align: center;
+            }
+
+            #settinglist{
+				height: 274px;
+			    width: 250px;
+			    border: none;
+			    background-color: white;
+			    border-radius: 15px;
+			    font-size: 20.5px;
+			    margin: 120px auto;
+			    padding-top: 2px;
+			    display: inline-block;
+		
+            }
+
+            #profileModal{
+                display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+                text-align: center;
+            }
+            #profileSet{
+                height: 530px;
+                width: 260px;
+                border:none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 18px;
+                margin: 85px auto;
+                padding-top: 2px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            #Public_scope{
+                height: 320px;
+                width: 250px;
+                border: none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 23px;
+                margin: 150px auto;
+                padding-top: 10px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            #Public_Scope_Modal{
+                display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+                text-align: center;
+            }
+
+            #comentSet{
+                height: 320px;
+                width: 250px;
+                border: none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 23px;
+                margin: 150px auto;
+                padding-top: 10px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            #comentSetModal{
+                display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4); 
+                text-align: center;
+            }
+
+            #comenttextarea{
+                height: 100px;
+                width: 230px;
+            }
+
+            #nameSet{
+                height: 250px;
+                width: 250px;
+                border: none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 23px;
+                margin: 150px auto;
+                padding-top: 10px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            #nameSetModal{
+                display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4); 
+                text-align: center;
+                /* display: inline-block; */
+            }
+
+            #nametextarea{
+                height: 25px;
+                width: 230px;
+            }
+
+            .checkBox{
+               border-radius: 100%;
+               width: 15px;
+               height: 15px; 
+            }
+            
+            #proImgSet{
+                height: 250px;
+                width: 250px;
+                border: none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 23px;
+                margin: 150px auto;
+                padding-top: 10px;
+                text-align: center;
+                display: inline-block;
+            }
+            
+            #proImgModal{
+             display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4); 
+                text-align: center;
+                /* display: inline-block; */
+            }
+            
+              #proimgarea{
+                height: 25px;
+                width: 230px;
+            }
+            
+             #proBackSet{
+                height: 250px;
+                width: 250px;
+                border: none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 23px;
+                margin: 150px auto;
+                padding-top: 10px;
+                text-align: center;
+                display: inline-block;
+            }
+            
+            #proBackModal{
+             display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4); 
+                text-align: center;
+                /* display: inline-block; */
+            }
+            
+              #probackarea{
+                height: 25px;
+                width: 230px;
+            }
+
+
+         #profileimg2{
+             border-radius: 100%;
+             width: 33px;
+             height: 31px;
+             float: left;
+             padding: 5px;
+             text-align: center;
+             display: inline-block;
+             margin-top: -3px;
+         }
+         
+         #name2{
+            font-size: 16px;
+         
+         }
+         
+         #Settingbtn15{
+		    width: 50px;
+		    height: 50px;
+		    float: right;
+		    border-radius: 10px;
+		    font-size: 35px;
+		    line-height: 20px;
+		    margin: 0;
+		    position: absolute;
+		    margin-left: 315px;
+		    margin-top: -33px;
+		    color: rgb(68, 68, 68);
+		    cursor:pointer;
+         }
+         
+         .imgbox{
+   			width: 620px;
+		    background: whitesmoke;
+		    text-align: center;
+		    display: inline-block;
+		    margin: auto;
+         }
+		
+		 .mySlides{
+		 	text-align: center;
+		 }
+		 
+		 
+/* 		 �옉�꽦�옄 : 諛뺤＜�셿
+		 �옉�꽦�씪 : 2020-02-21
+		 �궡�슜 : 寃뚯떆湲��긽�꽭 李쎌뿉�꽌 ... 踰꾪듉 �겢由��떆 �굹�삤�뒗 紐⑤떖李� */
+		 #SettingMadal15{
+            display: none;
+            position: fixed;
+            z-index: 10; 
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            text-align: center;
+        }
+
+        #Setting15{
+            height: auto;
+            width: 260px;
+            border:none;
+            background-color: white;
+            border-radius: 15px;
+            font-size: 18px;
+            margin: 175px auto;
+            padding-top: 2px;
+            text-align: center;
+            display: inline-block;
+        }
+        
+        #SettingMadal16{
+            display: none;
+            position: fixed;
+            z-index: 10; 
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            text-align: center;
+        }
+
+        #Setting16{
+            height: auto;
+            width: 260px;
+            border:none;
+            background-color: white;
+            border-radius: 15px;
+            font-size: 18px;
+            margin: 175px auto;
+            padding-top: 2px;
+            text-align: center;
+            display: inline-block;
+        }
+        
+        .settingitem{
+        	cursor:pointer;
+        }
+

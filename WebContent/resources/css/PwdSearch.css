@@ -1,0 +1,568 @@
+html {
+    height: 100%;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-touch-callout: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  body {
+    display: block;
+    height: 100%;
+    display: block;
+    background: white;
+  }
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+/*header,*/
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+element.style {
+    display: block;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+input {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+ #idContents {
+    width: 500px;
+    border: 1px solid whitesmoke;
+    height: 350px;
+    margin-left: 120px;
+    margin-top: 90px;
+    background: white;
+    border-radius: 9px;
+    padding: 30px;
+    font-family: "Noto Sans KR", NanumGothic, "Malgun Gothic", "Apple SD Gothic Neo", dotum, sans-serif;
+    
+}
+
+  .contentsWrap {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    /* common */
+  }
+  
+  .contentsWrap * {
+    font-family: "Noto Sans KR", NanumGothic, "Malgun Gothic", "Apple SD Gothic Neo", dotum, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0;
+    font-size: 14px;
+  }
+
+
+  
+
+  
+  .contentsWrap .searchTab li {
+    display: inline-block;
+    width: 50%;
+    height: 45px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ef3e42;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 0;
+  }
+  
+  .contentsWrap .searchTab li:first-child {
+    border-right: 0;
+    border-left: 1px solid #ddd;
+  }
+  
+  .contentsWrap .searchTab li.current {
+    background-color: #fff;
+    border: 1px solid #ef3e42;
+    border-bottom: 0;
+  }
+ 
+  
+  .contentsWrap .searchTab li.current a {
+    color: #ef3e42;
+  }
+  
+  .contentsWrap .searchTab li a {
+    display: block;
+    line-height: 45px;
+    text-align: center;
+    font-size: 15px;
+    color: #707070;
+  }
+
+.idsearchWrap .notiArea {
+    padding: 15px 0;
+    border-bottom: 6px solid #f4f4f4;
+}
+
+
+.contentsWrap .idsearchWrap .notiArea {
+    padding: 15px 0;
+    border-bottom: 6px solid #f4f4f4;
+}
+
+.contentsWrap .idsearchWrap .notiArea span {
+    font-size: 13px;
+    color: #aaa;
+}
+
+  .gryLine {
+      height: 3px;
+      background: #f8f8f8;
+  }
+
+  .searchType .typeList {
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.contentsWrap .idsearchWrap .searchType .typeList.current .title {
+  background-image: url(../icon/btn_icon_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right -36px;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList .title {
+    background-image: url(../icon/btn_icon_arrow.png);
+    background-repeat: no-repeat;
+    background-position: right top 22px;
+}
+
+  .searchType .typeList .inputEnter .inputBox {
+    margin-bottom: 10px;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList {
+
+    border-bottom: 1px solid #ddd;
+}
+
+.searchType .typeList .inputEnter .styleInput {
+    margin-bottom: 10px;
+}
+
+.searchType .typeList .inputEnter {
+    padding: 5px 0 15px;
+}
+
+.hLine {
+ height :10px;
+}
+
+
+
+
+button {
+    -webkit-appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: buttonface;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+.contentsWrap button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.contentsWrap .btnRed {
+    display: block;
+    background-color: #ef3e42;
+    width: 100%;
+    height: 45px;
+    line-height: 42px;
+    border-radius: 2px;
+    border: 1px solid #ef3e42;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList .title button {
+    width: 100%;
+    padding: 15px 0;
+    background: transparent;
+    text-align: left;
+    font-size: 15px;
+    color: #202020;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList .inputEnter {
+
+    padding: 5px 0 15px;
+  }
+  
+  .contentsWrap .idsearchWrap .searchType .typeList .inputEnter .inputBox {
+    font-size: 0;
+  }
+  
+  .contentsWrap .idsearchWrap .searchType .typeList .inputEnter .inputBox.hidden {
+    display: none;
+  }
+   
+
+.delBtn {
+    position: absolute;
+    top: 9px;
+    right: 11px;
+    z-index: 2;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    background: url(../icon/btn_input_del.png) no-repeat center center #fff;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+.contentsWrap .styleInput .delBtn {
+    position: absolute;
+    top: 9px;
+    right: 11px;
+    z-index: 2;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    background: url(../icon/btn_input_del.png) no-repeat center center #fff;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+
+/*******************************************************************/
+.contentsWrap .styleInput {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList .inputEnter .emailInput .customSelect {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  flex-basis : 10px;
+}
+.contentsWrap .idsearchWrap .searchType .typeList .inputEnter .emailInput .styleInput {
+  width: 100%;
+  margin-bottom: 0;
+  padding-right: 8px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.contentsWrap .customSelect {
+  position: relative;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.contentsWrap .idsearchWrap .searchType .typeList .inputEnter .emailInput {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0;
+
+}
+
+
+
+.contentsWrap .customSelect .newSelect  {
+    /*position: absolute;*/
+    top:0;
+    left:0;
+    height: 40px;
+    width: 180px;
+    line-height: 38px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: #f9f9f9 url(http://imivory.me/img/noname/arrow.png) no-repeat right center;
+    padding: 0 25px 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #202020;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.newSelect:focus {
+    outline-style : none;
+}
+
+.contentsWrap .customSelect .options {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+    border: 1px solid #313131;
+    background-color: #fff;
+
+}
+
+.contentsWrap .customSelect.active .options {
+  display: block;
+}
+
+.contentsWrap .customSelect .options li {
+    padding: 3px 10px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.contentsWrap .customSelect .options li:hover {
+    background: #ededed;
+}
+
+ul .options {
+    height: 160px;
+}
+
+/*************************************************************/
+
+.iInput {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 15px;
+    color: #202020;
+}
+
+
+.iInput:focus {
+    outline-style : none;
+}
+
+.iInput:hover {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #909090;
+    border-radius: 2px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 15px;
+    color: #202020;
+}
+
+.iInput:active {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #909090;
+    border-radius: 2px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 15px;
+    color: #202020;
+}
+
+.eInput {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 15px;
+    color: #202020;
+}
+
+.eInput:focus {
+    outline-style : none;
+}
+
+.eInput:hover {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #909090;
+    border-radius: 2px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 15px;
+    color: #202020;
+}
+
+.contentsWrap .styleInput .iInput {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 15px;
+    color: #202020;
+}
+
+
+  a {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+  }
+  
+  a:link,
+  a:visited,
+  a:active {
+    color: #202020;
+    text-decoration: none;
+  }
+
+
+  ul, ol {
+    list-style: none;
+}
+
+input, select {
+    vertical-align: middle;
+}
+.contentsWrap .searchTab ul {
+    font-size: 0;
+}
+
+
+select { 
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none; appearance: none; 
+} 
+
+.contentsWrap .styleInput .error {
+  padding: 10px;
+  line-height: 14px;
+  font-size: 13px;
+  color: #ef3e42;
+}
+
+.contentsWrap .typeList .error {
+  padding: 3px 10px 20px 10px;
+  line-height: 14px;
+  font-size: 13px;
+  color: #ef3e24;
+}
+
+/* IE 10, 11의 네이티브 화살표 숨기기 */ 
+select::-ms-expand { display: none; }
