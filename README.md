@@ -1,4 +1,4 @@
-# 6Days
+> # 6Days
 
 ## 소개
 유사 사이트인 'Facebook'과 'Instagram'을 모방해서 개발한 기본적인 기능을 갖춘 SNS 플랫폼입니다.
