@@ -20,7 +20,7 @@
 
 ## 구현 기능 소개
 
-## 게시판(공지사항 & QnA)
+### 게시판(공지사항 & QnA)
 
 > ### List 불러오기
 ![1](https://user-images.githubusercontent.com/50040251/87034137-54774280-c222-11ea-8aa2-1c446f0876db.png)
