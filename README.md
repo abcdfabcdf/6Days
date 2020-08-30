@@ -56,3 +56,4 @@
 > ### 게시물 댓글
 ![7](https://user-images.githubusercontent.com/50040251/87034514-e54e1e00-c222-11ea-8ea0-9128040ca344.png)
 - 해당 게시물의 번호를 찾아 그 해당 게시물의 댓글을 불러오고, 댓글을 작성할 수 있도록 구현하였습니다.
+![1313131](https://user-images.githubusercontent.com/50040251/91654046-cfe9c780-eae0-11ea-94fa-3bc57c72e4f4.png)
